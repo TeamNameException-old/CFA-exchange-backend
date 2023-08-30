@@ -1,5 +1,6 @@
 package com.fintech.market.dto;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -37,6 +38,7 @@ public class CFA {
         @AllArgsConstructor
         public static class Transactions {
             private int count;
+            @Schema(defaultValue = "integer")
             private String successfully;
         }
 
@@ -66,6 +68,7 @@ public class CFA {
             @AllArgsConstructor
             public static class Month {
                 private int orders;
+                @Schema(defaultValue = "integer")
                 private String successfully;
             }
 
